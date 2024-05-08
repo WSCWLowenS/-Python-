@@ -7,8 +7,7 @@ print("Welcome to the Quiz", name)
 print("This quiz is about General Knowledge")
 print("Write the capital letter of the correct answer")
 #Asking the user a question
-answer=input("What is the chemical symbol for Gold?") 
-answer=print("A.Gd B.Go C.Ag D.Au")
+answer=input("What is the chemical symbol for Gold? \n A.Gd B.Go C.Ag D.Au \n Answer:")
 #Telling the user the correct answer
 if answer == " D":
     print("Correct!")
