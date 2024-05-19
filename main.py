@@ -7,20 +7,28 @@ print("Welcome to the Quiz", name)
 print("This quiz is a 5 question quiz and it's about General Knowledge")
 print("Write the capital letter of the correct answer")
 #Question
-answer=input("What is the chemical symbol for Gold? \nA.Gd B.Go C.Ag D.Au \nAnswer:") .upper()
+question = "What is the chemical symbol for Gold?"
+a = "Gd"
+b = "Go"
+c = "Ag"
+d = "Au"
+Answer = input("{}\nA.{} B.{} C.{} D.{}}".format(question, a, b, c, d)).lower()
+
 #Answer
-if answer == " D" .upper():
-    print("Correct! The answer is D")
+if Answer == a or Answer == "a":
+    print("Correct!")
     score += 100
-elif answer == "":
-    print("Hahaha")
-    print("The answer is D")
+elif Answer == "":
+    print("Not sure?")
+elif Answer != a and Answer != "a" and Answer != b and Answer != "b" and Answer != c and Answer != "c":
+     print("That wasn't an answer")
 else:
     print("Wrong answer")
-    print("The answer is D")
+    print("The answer is Au")
 #Ending
 print("Your score is", score)
 print("Now for the next question")
+#Question
 answer=input("what is the closest planet to the sun? \nA.Mercury B. Venus C Pluto D. Earth \nAnswer:") .upper()
 #Answer
 if answer == " A" .upper():
@@ -34,6 +42,7 @@ else:
     print("The answer is A")
 print("Your score is", score)
 print("Great Job!")
+#Question
 answer=input("Who came up with the theory of relativity? \nA. Edgar Allan Poe B. Albert Einstein C Galileo Galilei D. Louis Pasteur \nAnswer:") .upper()
 #Answer
 if answer == " B" .upper():
@@ -46,6 +55,7 @@ else:
     print("Wrong answer")
     print("The answer is B")
 print("Your score is", score)
+#Question
 answer=input("How many players are there in a soccer team? \nA. 6 B. 11 C. 10 D. 9 \nAnswer:") .upper()
 #Answer
 if answer == " B" .upper():
@@ -58,6 +68,7 @@ else:
     print("Wrong answer")
     print("The answer is B")
 print("Your score is", score)
+#Question
 answer=input("What language is spoken in Brazil? \nA. Spanish B. Portuguese C. English D. French \nAnswer:") .upper()
 #Answer
 if answer == " B" .upper():
